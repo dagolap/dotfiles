@@ -10,3 +10,5 @@ ln -s $cur_dir/emacs/.emacs.d/ ~/.emacs.d
 # Git
 [[ -f $HOME/.gitconfig ]] && mv $HOME/.gitconfig $HOME/.gitconfig-bkp
 ln -s $cur_dir/git/.gitconfig ~/.gitconfig
+
+mkdir -p $HOME/.bootstrapped/ && touch $HOME/.bootstrapped/dotfiles
