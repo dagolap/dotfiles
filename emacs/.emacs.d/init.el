@@ -4,12 +4,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;
-; TODO: When first installing:
-;
-; M-x package-refresh-contents
-;
-
+(when (not (package-installed-p 'starter-kit))
+  (package-refresh-contents))
 
 ; Packages I use
 (defvar my-packages '(starter-kit
