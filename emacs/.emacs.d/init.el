@@ -2,6 +2,7 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;
 ; TODO: When first installing:
@@ -17,7 +18,8 @@
 		      starter-kit-eshell
 		      clojure-mode
 		      clojure-test-mode
-		      nrepl))
+		      nrepl
+                      color-theme-solarized))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
