@@ -11,4 +11,9 @@ ln -s $cur_dir/emacs/.emacs.d/ ~/.emacs.d
 [[ -f $HOME/.gitconfig ]] && mv $HOME/.gitconfig $HOME/.gitconfig-bkp
 ln -s $cur_dir/git/.gitconfig ~/.gitconfig
 
+# Awesome
+[[ -f $HOME/.config/awesome/rc.lua ]] && mv $HOME/.config/awesome/rc.lua $HOME/.config/awesome/rc.lua-bkp
+mkdir -p ~/.config/awesome
+ln -s $cur_dir/awesome/rc.lua ~/.config/awesome/rc.lua
+
 mkdir -p $HOME/.bootstrapped/ && touch $HOME/.bootstrapped/dotfiles
